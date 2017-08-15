@@ -1,0 +1,26 @@
+bind 可以绑定多个触发的事件
+unbind 删除事件
+
+$('input').bind('click onmouseover', function(){})
+
+mouseenter和mouseleave穿过子元素时不会触发
+
+focus光标激活
+focusin可以是子元素激活
+
+---事件对象---
+trigger() 模拟事件操作，多条数据必须使用[]
+
+.delegate('button','click',function(){})
+.live语义不清晰，没有指定绑定了谁
+delegate语义清晰，绑定谁，谁就在开头
+
+undelegate 删除
+
+------
+普通绑定bind
+普通解绑unbind
+
+事件委托live delegate
+解除委托die undelegate
+

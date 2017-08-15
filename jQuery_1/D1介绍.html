@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*div{*/
+            /*padding:8px 0px;*/
+            /*font-size:12px;*/
+            /*text-align:center;*/
+            /*border:1px solid #888;*/
+        /*}*/
+    </style>
+    <!--<script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.1/jquery.js"></script>-->
+    <!--<script type="text/javascript" src="jquery-3.2.1.min.js"></script>-->
+    <script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script>
+    <script type="text/javascript">
+//        <!--$(document).ready(function() {-->
+//            <!--$("div").html("您好！通过慕课网学习jQuery才是最佳的途径。");-->
+//        <!--});-->
+
+        $(function () {
+            $("#box").css('color', 'red').css('font-size', '20px');
+        });
+
+        $(function () {
+//            alert($);
+//            alert($());
+        })
+        $(document).ready(function () {
+            // 返回的是jquery对象
+        })
+        $(function () {
+            // 返回的是原生的DOM对象
+//            alert(document.getElementById('box'));
+        })
+        $(function () {
+            alert($('#box').get(0));
+        })
+    </script>
+</head>
+<body>
+    <!--<script type="text/javascript">alert($) </script>-->
+    <!--<div></div>-->
+
+    <input type="button" value="button">
+
+    <div id="box">基础核心</div>
+    <div id="box2">基础核心2</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+//            $('div').css('color','red');
+            var box = $('div').css(['color','width','height']);
+//            for (var i in box) {
+//                alert(i + box[i]);
+//            }
+
+//            $.each(box, function (attr,value) {
+//                alert(attr+':'+value);
+//            })
+
+//            $('div').each(function (index, element) {
+//                alert(index+'：'+element);
+//            })
+
+            $('div').css({
+                'color':'blue',
+                'background-color': 'red'
+            })
+
+            $('div').css('width',function (index,value) {
+                return parseInt(value) - 500 + 'px';
+            })
+
+//            $('div').addClass('red');
+//            click toggleClass切换样式
+        })
+    </script>
+</head>
+<body>
+    <div>我的测试JJJJJJJJJJS</div>
+</body>
+</html>
+

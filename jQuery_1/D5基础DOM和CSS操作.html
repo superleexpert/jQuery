@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+//            alert($('#box').html());
+//            alert($('#box').text()); // text获取的是文本，有html会自动被清理
+//            $('#box').html('<em>www.li.cc</em>'); // 替换HTML内容，HTML会自动解析
+//            $('#box').text('<em>www.li.cc</em>'); // 替换文本内容，有HTML会自动转义
+
+//            alert($('input').val());
+//            $('input').val('啦啦啦啦');
+//            $('input').val(['男','女', '编程']);
+
+//            alert($('#box').attr('id'));
+            $('div').attr('title',function (index, value) {
+                return '我是域名'+ index + '号';
+            })
+
+            $('div').removeAttr('title');
+        })
+    </script>
+</head>
+<body>
+    <div id="box">
+        <strong>www.baidu.com</strong>
+    </div>
+
+    <input type="text" value="按说是看得见和">
+    <input type="radio" value="男">男
+    <input type="radio" value="女">女
+    <input type="checkbox" value="编程">编程
+</body>
+<!--
+可以使用attr来创建id属性，但是强烈不建议这么做，这样会导致整个页面结构的混乱，同样class也不建议
+-->
+</html>

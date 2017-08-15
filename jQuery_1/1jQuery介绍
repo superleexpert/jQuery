@@ -1,0 +1,15 @@
+---jQuery---
+轻量级的JavaScript库
+核心以依然是JS
+不仅兼容了CSS3，还兼容各种浏览器
+
+优点：
+强大的选择器、解决浏览器的兼容、完善的事件机制、出色的Ajax封装、丰富的UI
+
+有链式操作、回调函数、迭代器、延迟对象、队列等
+
+除了jQuery，其他流行的库还有YUI、Prototype、Mootools、Dojo、ExtJS
+
+$等于jQuery
+
+如果有多个库都使用了$出现了冲突，可以使用var $$ = jQuery，后面使用$$

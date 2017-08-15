@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+//            $('div,p,strong').css('color','red');
+//            $('#box,p,strong').css('color','blue');
+//            $('#box2 div').css('color','green');
+
+//            $('#box p').css('color','red');
+//            $('#box > p').css('color','blue');
+//            $('#box').children('p').css('color','red');
+//            $('#box').find('p').css('color','green');
+
+//            $('#box+p').css('color','red');
+//            $('#box~p').css('color','red');
+//            $('#box').next('p').css('color','red');
+//            $('#box').nextAll('p').css('color','red');
+//            $('#box').prevAll('p').css('color','red');
+//            $('#box').prev('p').css('color','red');
+            $('#box').prevUntil('p').css('color','red');
+            $('#box').nextUntil('p').css('color','purple');
+        });
+    </script>
+</head>
+<body>
+    <div id="box2">
+        <p>p</p>
+        <p>p</p>
+        <p>p</p>
+        <p>p1</p>
+        <strong>哦哦哦</strong>
+        <div id="box">
+            <p>p</p>
+            <p>p</p>
+            <p>p</p>
+            <p>p</p>
+        </div>
+        <strong>啦啦啦</strong>
+        <p>p2</p>
+        <p>p</p>
+        <p>p</p>
+    </div>
+    <!--<div id="box">div</div>-->
+    <!--<div>div</div>-->
+    <!--<div id="box2">-->
+        <!--<div>-->
+            <!--我是后代-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<p class="pox">p</p>-->
+    <!--<p class="pox">p</p>-->
+    <!--<p>p</p>-->
+
+    <!--<strong>strong</strong>-->
+    <!--<strong>strong</strong>-->
+    <!--<strong>strong</strong>-->
+</body>
+</html>

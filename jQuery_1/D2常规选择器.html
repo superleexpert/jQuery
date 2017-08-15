@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常规选择器</title>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+    <!--<script type="text/javascript" src="jquery-3.2.1.min.js"></script>-->
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $('#box').css('color','red'); // 添加行为
+            $('.box2').css('color','blue');
+//            alert($('div').size());
+            $('#box > p').css('color', 'orange');
+        });
+    </script>
+</head>
+<body>
+    <div id="box">常规选择器
+        <p>ddddddddaa阿萨德aaaaaa啊</p>
+        <p>ddddddddaa阿萨德aaaaaa</p>
+        <p>ddddddddaa按说aaaaaa</p>
+        <div>dddddd发ddaaaaa发aaa
+            <p>xcvxcv</p>
+            <p>zxcvxzcv</p>
+            <p>cxvbcxvbcxvb</p>
+            <p>xcvbcxvbcxvb</p>
+        </div>
+    </div>
+    <div class="box2">常规选择器2</div>
+    <div class="box2">常规选择器2</div>
+</body>
+</html>

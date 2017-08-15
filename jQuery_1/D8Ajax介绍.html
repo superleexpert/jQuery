@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax</title>
+    <!--<script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>-->
+    <!--百度静态资源库-->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.js"></script>
+    <script type="text/javascript">
+//        jQuery中的AJAX
+        $(function () {
+//            $('input').click(function () {
+//                $('#box').load('DemoTest.html .url');
+////                $('#box').load('test.php');
+//            },function (response, stutas, xhr) {
+////                alert(response);
+////                alert(stutas);
+////                alert(xhr.responseText);
+//            })
+
+            $.ajax({
+                type:'POST',
+                url:'test.php',
+                data:{
+                    url:'ycku'
+                },
+                success:function (response, status, xhr) {
+                    $('#box').html(response);
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<input type="button" value="异步加载数据">
+<div id="box"></div>
+</body>
+</html>

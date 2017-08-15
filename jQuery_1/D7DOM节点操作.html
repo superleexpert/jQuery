@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点操作</title>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+//            var box = $('<div=id="box">节点</div>');//创建节点
+//            $('body').append(box);
+
+//            $('div').append('<strong>DOM</strong>');
+//            $('div').prepend('<strong>DOM2</strong>');
+//            $('div').after('<strong>DOM3</strong>');
+//            $('strong').insertAfter('div');
+
+//            $('div').wrap('<strong>啦啦啦</strong>>');
+
+//            ---
+//            var box = $('input[name = my]').val();
+//            var box = $(':input').size(); // 选择所有表单元素
+//            alert(box);
+
+            $('input').bind('click', function (e) {
+                alert(e.target);
+//                alert(e.currentTarget);
+//                alert(e.relatedTarget);
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--<div>我是节点</div>-->
+    <!--<input type="text" name='my' value="名字">-->
+    <!--<input type="password" value="密码">-->
+    <!--<textaera></textaera>-->
+    <!--<select name="sel" id=""></select>-->
+
+    <input type="button" value="test">
+</body>
+</html>
